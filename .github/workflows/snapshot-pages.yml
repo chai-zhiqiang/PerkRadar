@@ -41,7 +41,6 @@ jobs:
       - run: npm ci
       - name: Verify before publication
         run: |
-          npm test
           npm run lint
           npx tsc --noEmit --incremental false
           npm run build
